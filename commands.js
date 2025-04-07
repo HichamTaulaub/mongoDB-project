@@ -72,7 +72,7 @@ db.contactlist
   })
   .pretty();
 
-// Update first name from "Seif" to "Anis" for the contact with last name "Kefi"
+// Update first name from "Seif" to "Anis" for the contact with last name "Kefii"
 db.contactlist.updateOne(
   { last_name: "Kefi", first_name: "Seif" },
   { $set: { first_name: "Anis" } }
@@ -83,3 +83,5 @@ db.contactlist.deleteMany({ age: { $lt: 5 } });
 
 // Display all remaining contacts
 db.contactlist.find().pretty();
+
+
